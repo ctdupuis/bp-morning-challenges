@@ -13,7 +13,26 @@ for (let i = 0; i < array.length; i++) {
         }
     }
 }
-
-
-
 console.log(result)
+
+
+// https://dev.to/colerau/checking-whether-there-are-any-two-numbers-that-will-sum-up-to-a-given-number-3gi9
+// Added a more advanced solution found on Dev.to
+
+sumFinder = array => {
+    let obj = {}
+    let diff
+
+    for (let i = 0; i < array.length; i++) {
+        diff = 0 - array[i]
+
+        if (obj[diff]) {
+            return true
+        } else {
+            obj[array[i]] = true
+        }
+    }
+    return false
+}
+
+console.log(sumFinder(array))
