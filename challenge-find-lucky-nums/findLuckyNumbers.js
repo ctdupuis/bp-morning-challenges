@@ -5,7 +5,8 @@ function luckyNumbers(n) {
     const array = []
     while (array.length < n) {
         let r = Math.floor(Math.random() * 10) + 1;
-        if(array.indexOf(r) === -1) array.push(r)
+        let found = array.find(num => num === r)
+        if(!found) array.push(r)
     }
     return array
 }
