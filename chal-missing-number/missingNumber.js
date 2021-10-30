@@ -13,6 +13,4 @@ const missingNumber = (array, maxNum) => {
 
 
 console.log(missingNumber([1, 2, 3, 4, 5, 6, 7, 9, 10], 10)) // => 8
-console.log(missingNumber([11, 14, 16, 13, 12], 5)) // => 15
-console.log(missingNumber([20, 22, 23, 24, 25, 26], 6)) // => 21
-console.log(missingNumber([53, 52, 47, 48, 46, 45, 50, 49], 8)) // => 51
+console.log(missingNumber([11, 14, 16, 13, 12], 5)) // => 1
