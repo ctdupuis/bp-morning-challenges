@@ -4,10 +4,12 @@ let sample2 = "(This (is (a) balanced) string.)"
 let sample3 = "This is () also ) unbalanced."
 let sample4 = "Balanced."
 
+// Paired with Immanuel M
 // Write your solution below:
 
 const balanced = string => {
-    const splitStr = string.split("")
+    const splitStr = string.split("");
+
     const leftSide = [];
     const rightSide = [];
 
@@ -18,9 +20,8 @@ const balanced = string => {
         if (splitStr[i] === ")") {
             rightSide.push(splitStr[i])
         };
-    }
-
-    return leftSide.length === rightSide.length ? "balanced" : "unbalanced";
+    };
+   return rightSide.length === leftSide.length ? "balanced" : "unbalanced";
 }
 
 
