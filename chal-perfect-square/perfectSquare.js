@@ -1,8 +1,7 @@
 // Paired with Michael Bodin
 
-isFloat = n => {
-    return Number(n) === n && n % 1 !== 0;
-}
+isFloat = n => Number(n) === n && n % 1 !== 0;
+
 
 perfectSquare = number => {
     let square = Math.sqrt(number) + 1;
