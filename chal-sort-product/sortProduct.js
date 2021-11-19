@@ -20,12 +20,13 @@ sortProduct = array => {
       totals.push(totalObj)
     })
 
+
     totals.sort((a, b) => a.total - b.total)
 
     let newArr = []
 
     totals.forEach(e => newArr.push(array[e.i]))
-    
+
     return newArr
     
 }
